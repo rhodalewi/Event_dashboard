@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphatwelve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="opacity"></div>
+        <header class="navBar">
+            <div class="collapse_nav">
+                <div class="collapse_logo"></div>
+                <nav class="collapse_allNav">
+                    <div class="collapse_navlink">
+                        <img src="./img/home-icon.svg" alt="home">
+                    </div>
+    
+                    <div class="collapse_navlink">
+                        <img src="./img/event-collapse.svg" alt="event">
+                    </div>
+    
+                    <div class="collapse_navlink">
+                        <img src="./img/speaker-collapse.svg" alt="speaker">
+                    </div>
+    
+                    <div class="collapse_navlink">
+                        <img src="./img/report-collapse.svg" alt="report">
+                    </div>
+    
+                    <div class="collapse_navlink collapse_notification">
+                        <span></span>
+                        <img src="./img/notification-icon.svg" alt="notification">
+                        
+                    </div>
+    
+                    <div class="collapse_navlink">
+                        <img src="./img/messages-icon.svg" alt="message">
+                    </div>
+    
+                    <div class="collapse_navlink">
+                        <img src="./img/settings-icon.svg" alt="settings">
+                    </div>
+    
+                    <button type="button" onclick="toggleNav()" class="collapseBtn">
+                        <div class="collapse_navlink collapseBtn">
+                            <img src="./img/collapse-icon.svg" alt="collapse" class="collapseAll">
+                        </div>
+                    </button>
+                    
+    
+                    <div>
+                        <div id="profile-img"><img src="./img/profile-icon.svg" alt="profile"></div>
+                    </div>
+                </nav>         
+            </div>
+    
+            <nav class="full_navBar">
+                <div class="logo full_icon">Full Logo</div>
+            
+                <div class="allNav">
+                
+                    <div class="navLink focus home">
+                        <img src="./img/home-icon.svg" alt="home">
+                        <p>Home</p>
+                    </div>
+
+                    <div class="navLink fullNav_hover fullNav_active">
+                        <img src="./img/events-icon.svg" alt="event" class="full_icon">
+                        <p>Events</p>
+                    </div>
+                    
+                    <div class="navLink fullNav_hover fullNav_active">
+                        <img src="./img/speakers-icon.svg" alt="speakers" class="full_icon">
+                        <p>Speakers</p>
+                    </div>
+    
+                    <div class="navLink fullNav_hover fullNav_active">
+                        <img src="./img/reports-icon.svg" alt="report" class="full_icon">
+                        <p>Reports</p>
+                    </div>
+    
+                    <div class="notification_navBar fullNav_hover fullNav_active">
+                        <div class="navLink">
+                            <img src="./img/notification-icon.svg" alt="notification" class="full_icon">
+                            <p>Notifications</p>
+                        </div>
+                        <span class="full_icon"> 3 </span>
+                    </div>
+    
+                    <div class="navLink fullNav_hover fullNav_active">
+                        <img src="./img/messages-icon.svg" alt="message" class="full_icon">
+                        <p>Messages</p>
+                    </div>
+    
+                    <div class="navLink fullNav_hover fullNav_active">
+                        <img src="./img/settings-icon.svg" alt="setting" class="full_icon">
+                        <p>Settings</p>
+                    </div>
+    
+                    <button type="button" class="collapseBtn fullNav_hover" onclick="toggleNav()">
+                        <div class="navLink collapseBtn">
+                            <img src="./img/collapse-icon.svg" alt="collapse">
+                            <p>Collapse</p>
+                        </div>
+                    </button>
+                    
+    
+                    <div class="navLink full_icon">
+                        <div class="toggle"></div>
+                        <p>Dark Mode</p>
+                    </div>
+    
+                    <div class="navLink profile">
+                        <div id="profile-img" class="full_icon"><img src="./img/profile-icon.svg" alt="profile" ></div>
+                        <span class="profile-details">
+                            <p>Rudra Devi</p>
+                            <p class="profile-email">rudra.devi@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+       
+
+        <div class="main_content">
+            <p class="heading">Welcome! here’s your summary</p>
+
+            <div class="statistics">
+                <div class="stats">
+                    <div class="label">
+                        <h5>Total Events</h5>
+                        <img src="./img//info-icon.svg" alt="info">
+                    </div>
+
+                   <div class="value">
+                        <p>100,000</p>
+                        <img src="./img/arrowUp-icon.svg" alt="Arrow">
+                        <span>+5.0%</span>
+                   </div>
+                </div>
+
+                <div class="stats">
+                    <div class="label">
+                        <h5>Active Speakers</h5>
+                        <img src="./img//info-icon.svg" alt="info">
+                    </div>
+
+                   <div class="value">
+                        <p>25</p>
+                        <img src="./img/arrowDown.svg" alt="Arrow">
+                        <span class="loss">-5.0%</span>
+                   </div>
+                </div>
+
+                <div class="stats">
+                    <div class="label">
+                        <h5>Total Registrations</h5>
+                        <img src="./img//info-icon.svg" alt="info">
+                    </div>
+
+                   <div class="value">
+                        <p>300</p>
+                        <img src="./img/arrowUp-icon.svg" alt="Arrow">
+                        <span>+5.0%</span>
+                   </div>
+                </div>
+
+                <div class="stats">
+                    <div class="label">
+                        <h5>Total Revenue</h5>
+                        <img src="./img//info-icon.svg" alt="info">
+                    </div>
+
+                   <div class="value">
+                        <p>$500,000</p>
+                        <img src="./img/arrowUp-icon.svg" alt="Arrow">
+                        <span>+5.0%</span>
+                   </div>
+                </div>
+            </div>
+
+            <div class="event_information">
+                <h5>Event Registrations per month</h5>
+                
+                <div class="event_img">
+                    <img src="./img//Chart.png" alt="chart">
+                    
+                    <div class="carousal_container">
+                        <div class="carousal_details">
+                            <div class="carousal_img show">
+                                <img src="./img/carousal1.png" alt="image">
+                                <div class="carousal_text">
+                                    <h6>Latest News & Updates</h6>
+                                    <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="carousal_img">
+                                <img src="./img/carousal2.png" alt="image">
+                                <div class="carousal_text">
+                                    <h6>Latest News & Updates</h6>
+                                    <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousal_img">
+                                <img src="./img/carousal3.png" alt="image">
+                                <div class="carousal_text">
+                                    <h6>Latest News & Updates</h6>
+                                    <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="slider">
+                            <button type="button" class="carousal_previous">
+                                <img src="./img/chevronDown-icon.svg" alt="previous" class="previous ">
+                            </button>
+                            
+                            <button type="button" class="carousal_next">
+                                <img src="./img/chevronDown-icon.svg" alt="next" class="next ">
+                            </button>
+                           
+                        </div>
+
+                        <div class="carousal">
+                            <div class="carousal_indicator indicator" data-index="0"></div>
+                            <div class="carousal_indicator" data-index="1"></div>
+                            <div class="carousal_indicator" data-index="2"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="event_history">
+                <h5>Event History</h5>
+                <div class="toolbar">
+                    <div class="toolbar1">
+                        <div class="search">
+                            <img src="./img//search-icon.svg" alt="search" id="searchIcon">
+                            <input type="text" name="search" id="search" placeholder="Search..." disabled>
+                        </div>
+                       
+                        <div class="input dateInput">
+                            <p>Date</p>
+                            <img src="./img/chevronDown-icon.svg" alt="img">
+                        </div>
+
+                        <div class="input statusInput">
+                            <p>Status</p>
+                            <img src="./img/chevronDown-icon.svg" alt="img">
+                        </div>
+
+                        <div class="input statusInput">
+                            <p>Name</p>
+                            <img src="./img/chevronDown-icon.svg" alt="img">
+                        </div>
+                        <p class="display_info">Displaying 100 results</p>
+                    </div>
+
+                    <div class="toolbar2">
+                        <p class="toolbar2_p">Sort:</p>
+                        <div class="input recent">
+                            <p>Most Recent</p>
+                            <img src="./img//chevronDown-icon.svg" alt="img">
+                        </div>
+
+                        <div class="input recent">
+                            <p>&#8942;</p>
+                        </div>
+
+                        <div class="input export">
+                            <img src="./img//download-icon.svg" alt="img">
+                            <p>Export</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data_table">
+                    <table>
+                        <thead>
+                                <th>
+                                    <div class="column">
+                                        Event Name 
+                                        <img src="./img//arrowDown_hover.svg" alt="" class="column_img">
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="column">
+                                        Date
+                                        <img src="./img//arrowDown_hover.svg" alt="" class="column_img">
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="column">
+                                        Speaker
+                                        <img src="./img//arrowDown_hover.svg" alt="" class="column_img">
+                                    </div>
+                                </th>
+
+                               <th>
+                                    <div class="column">
+                                        Status
+                                        <img src="./img//arrowDown_hover.svg" alt="" class="column_img">
+                                    </div>
+                               </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="open_modal">Cloud Innovation Summit</td>
+                                <div class="modal">
+                                    <div class="modal_header">
+                                        <h2>Event Name</h2>
+                                        <img src="./img/cancel_icon.svg" alt="cancel" class="cancel">
+                                    </div>
+                                    
+                                    <p class="event_p1">Event Date</p>
+                                    <p class="event_p2">Event Description</p>
+
+                                    <div class="event_description">
+                                        <img src="./img//Avatar Group.png" alt="">
+
+                                        <p>3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C. <br>
+                                        300 Attendees</p>
+                                    </div>
+
+                                    <div class="modal_footer">
+                                        <button type="button" class="editBtn">Edit</button>
+
+                                        <div class="right_button">
+                                            <button type="button" class="deleteBtn">Delete</button>
+                                            <button type="button" class="completedBtn">Mark as completed</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <td>2024-10-15</td>
+                                <td>Jane Doe</td>
+                                <td>
+                                    <div class="status">
+                                        <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+    
+                            <tr>  
+                                <td>Blockchain Revolution Conference</td>
+                                <td>2024-11-05</td>
+                                <td>Dr. Peter Smith</td>
+                                <td>
+                                    <div class="status inProgress">
+                                        <span class="circle progressCircle"></span>
+                                        <p>In Progress</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>AI in Healthcare Symposium</td>
+                                <td>2024-12-01</td>
+                                <td>Dr. Aisha Malik</td>
+                                <td>
+                                    <div class="status">
+                                        <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Future of Fintech Forum</td>
+                                <td>2024-10-25</td>
+                                <td>John Lee</td>
+                                <td>
+                                    <div class="status">
+                                        <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Data Analytics in Business</td>
+                                <td>2024-11-12</td>
+                                <td>Rachel Moore</td>
+                                <td>
+                                    <div class="status">
+                                        <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Sustainable Energy Expo</td>
+                                <td>2024-09-28</td>
+                                <td>Prof. Alan Green</td>
+                                <td>
+                                    <div class="status">
+                                         <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Web3 Interfaces Workshop</td>
+                                <td>2024-10-10</td>
+                                <td>Kevin Adams</td>
+                                <td>
+                                    <div class="status inProgress">
+                                        <span class="circle progressCircle"></span>
+                                        <p>In Progress</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Cybersecurity for Startups</td>
+                                <td>2024-11-19</td>
+                                <td>Emily Zhang</td>
+                                <td>
+                                    <div class="status">
+                                        <span class="circle completeCircle"></span>
+                                        <p>Completed</p>
+                                    </div>   
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Smart Cities Forum</td>
+                                <td>2024-10-18</td>
+                                <td>Dr. Maria Hernandez</td>
+                                <td>
+                                    <div class="status inProgress">
+                                        <span class="circle progressCircle"></span>
+                                        <p>In Progress</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>        
+                                <td>Tech Safari Mixer</td> 
+                                <td>2024-09-30</td>
+                                <td>Guest Panel</td>
+                                <td>
+                                    <div class="status inProgress">
+                                        <span class="circle progressCircle"></span>
+                                        <p>In Progress</p>
+                                    </div>
+                                </td>
+                            </tr>     
+                        </tbody>
+                </table>
+            </div>
+               
+                
+                <div class="footer">
+                    <div class="left_footer">
+                        <div class="active viewButton previous"><img src="./img/chevronDown-icon.svg" alt="img"></div>
+                        <span class="numberContainer indexActive">1</span>
+                        <span class="numberContainer">2</span>
+                        <span class="numberContainer">3</span>
+                        <div class="viewButton next"><img src="./img/chevronDown-icon.svg" alt="img"></div>
+                    </div>
+
+                    <div class="right_footer">
+                        <p>Show:</p>
+                        <div class="input">
+                            <p>10 rows</p>
+                            <img src="./img//chevronDown-icon.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
