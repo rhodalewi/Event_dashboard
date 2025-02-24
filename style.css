@@ -59,6 +59,10 @@ img {
     top: 0;
 }
 
+#menu_icon {
+    display: none;
+}
+
 .full_navBar {
     display: flex;
     flex-direction: column;
@@ -66,10 +70,9 @@ img {
     width: 236px;
     height: 100vh;
     gap: 2rem;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     font-size: 0.875rem;
     font-weight: 400;
-    color: var(--GRAY-700);
     border-right: 1px solid var(--GRAY-100);
     background-color: var(--WHITE);
     transition: width 0.6s ease;
@@ -105,6 +108,7 @@ img {
     width: 100%;
     padding: 0.5rem 0.35rem;
     border-radius: 4px;
+    color: var(--GRAY-700);
     transition: width 0.4s ease-out;
 }
 
@@ -789,3 +793,64 @@ thead th:hover .column_img {
 }
 
 
+
+/* MOBILE VIEW */
+@media screen  and (max-width: 375px) {
+    body {
+        width: fit-content;
+        border: 1px solid red;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .navBar {
+        position: relative;
+        /* border: 2px solid blue; */
+    }
+
+    .full_navBar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid var(--GRAY-200);
+    }
+
+    .logo {
+        margin: 0;
+       height: 32px;
+    }
+
+    #menu_icon {
+        display: block;
+    }
+
+    .allNav {
+        position: absolute;
+        background-color: var(--WHITE);
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        border-right: 1px solid  var(--GRAY-100);
+        padding-left: 1.25rem;
+      /*   border: 1px solid red; */
+    }
+
+    .focus {
+        background-color: transparent;
+        color: var(--GRAY-700);
+    }
+
+    .collapse_allNav{
+        display: none;
+    }
+
+    .collapseBtn {
+        display: none;
+    }
+}
