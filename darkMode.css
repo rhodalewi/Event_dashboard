@@ -1,0 +1,296 @@
+:root {
+    --WHITE: #FFF;
+    --NEW-SELECT: #FCF7FF;
+    --PRIMARY-COLOR: #8576FF;
+    --PRIMARY-DARK: #484554;
+    --BLUE: #77B1FF;
+    --BLUE-100: #DBEAFE;
+    --BLUE-500: #3B82F6;
+    --GRAY-50: #F8FAFC;
+    --GRAY-200: #E2E8F0;
+    --GRAY-500: #64748B;
+    --SUCCESS-500: #10B981;
+    --SUCCESS-DARK: #65DDB5;
+    --PRIMARY-SELECT: #ADA9BB;
+    --SELECT: #F5EBFF;
+    --BLACK1: #6A6676;
+    --BLACK2: #383544;
+}
+
+/* DARK MODE TOGGLE STYLE*/
+.toggleMode {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 1.5rem;
+    height: 1rem;
+    background-color: var(--GRAY-200);
+    border-radius: 100px;
+    padding: 0 2px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.toggleMode::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--WHITE);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+.toggleMode.switch::before {
+    left: calc(100% - 14px);
+}
+
+body.switchMode {
+    background-color: var(--BLACK2);
+    color: var(--WHITE);
+}
+
+
+/* NAVIGATION BAR DARK MODE */
+body.switchMode .navBar {
+    background-color: var(--PRIMARY-DARK);
+    border-right: 1px solid var(--PRIMARY-DARK); 
+}
+
+body.switchMode .navLink,
+body.switchMode .collapseBtn {
+    color: var(--WHITE);
+    font-weight: 400;
+}
+
+body.switchMode .focus {
+    background-color: var(--PRIMARY-COLOR) ;
+    color: var(--NEW-SELECT);
+}
+
+body.switchMode .focus img {
+    filter: brightness(200%) sepia(8%) saturate(150%) hue-rotate(240deg);
+}
+
+body.switchMode .profile-email {
+    color: var(--WHITE);
+}
+
+body.switchMode .collapseBtn .collapseNav_icon {
+    filter:  brightness(1000%) contrast(100%);
+    
+}
+
+body.switchMode .toggleMode,
+body.switchMode .input:hover {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+body.switchMode .fullNav_hover:hover,
+body.switchMode .collapseBtn:hover {
+    color: var(--PRIMARY-DARK);
+}
+
+body.switchMode .collapseNav_icon:hover {
+    filter:none;
+}
+
+body.switchMode .navBar.collapsed img {
+    filter: brightness(80%) sepia(8%) saturate(150%) hue-rotate(240deg);
+}
+
+body.switchMode .navBar.collapsed .home_filter {
+    filter: brightness(400%) contrast(10%);
+}
+
+body.switchMode .navBar.collapsed .collapseNav_icon,
+body.switchMode .navBar.collapsed .darkMode_icon {
+    filter: brightness(150%) contrast(20%);
+}
+
+
+/* MAIN DARK MODE */
+body.switchMode .statistics .stats {
+    background-color: var(--PRIMARY-DARK);
+    border: 1px solid var(--PRIMARY-DARK);
+}
+
+body.switchMode .statistics .stats h5,
+body.switchMode .statistics .stats p {
+    color: var(--WHITE);
+}
+
+body.switchMode .statistics .stats img,
+body.switchMode .column_img {
+    filter: brightness(500%) contrast(100%);
+}
+
+body.switchMode .event_information .mobile_chart {
+    content: url(./img/desktop_chart_darkmode.svg);
+    border-radius: 4px;
+}
+
+body.switchMode .search {
+    background-color: var(--PRIMARY-DARK);
+    border-color: var(--PRIMARY-DARK);
+}
+
+body.switchMode .input {
+    color: var(--NEW-SELECT);
+    border-color: var(--PRIMARY-DARK);
+    background-color: var(--PRIMARY-DARK);
+}
+
+body.switchMode .input img {
+    filter: brightness(1000%) contrast(1000%);
+}
+
+body.switchMode table,
+body.switchMode .modal {
+    background-color: var(--PRIMARY-DARK);
+}
+
+body.switchMode table th {
+    background-color: var(--BLACK1);
+    color: var(--WHITE);
+}
+
+body.switchMode table th:hover,
+body.switchMode .mobile_column_header:hover {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+body.switchMode .display_info,
+body.switchMode .toolbar2_p,
+body.switchMode tbody tr td {
+    color: var(--WHITE);
+}
+
+body.switchMode .status {
+    background-color: var(--PRIMARY-DARK);
+    border: 1px solid var(--SUCCESS-DARK);
+}
+
+body.switchMode .inProgress {
+    border: 1px solid var(--BLUE);
+    color: var(--BLUE);
+}
+
+body.switchMode .progressCircle {
+    background-color: var(--BLUE);
+}
+
+body.switchMode .viewButton {
+    background-color: var(--PRIMARY-DARK);
+    border: 1px solid var(--PRIMARY-DARK);
+}
+
+body.switchMode .viewButton img {
+    filter: invert(52%) sepia(70%) saturate(470%) hue-rotate(210deg);
+}
+
+body.switchMode .right_footer .input:hover,
+body.switchMode .search:hover {
+    background-color: var(--PRIMARY-DARK);
+    border: 1px solid var(--BLUE-100);
+}
+
+body.switchMode .modal h2,
+body.switchMode .modal .event_p1,
+body.switchMode .modal p {
+    color: var(--NEW-SELECT) !important;
+}
+
+body.switchMode .modal_footer {
+    background-color: var(--PRIMARY-SELECT);
+}
+
+@media screen and (max-width: 768pX) {
+    body.switchMode .navBar {
+        border-bottom: none;
+    }
+
+    body.switchMode .focus {
+        background-color: transparent;
+    }
+
+    body.switchMode #menu_icon {
+        filter: invert(100%);
+    }
+
+    body.switchMode .allNav {
+        background-color: var(--PRIMARY-DARK);   
+        border-top: 1px solid var(--GRAY-500);  
+        top: 3.75rem;   
+    }
+
+    body.switchMode .mobile_chart {
+        content: url(./img/mobile_darkmode_chart.svg);
+    }
+
+    body.switchMode .mobile_column {
+        background-color: var(--BLACK1);
+        color: var(--NEW-SELECT);
+    }
+
+    body.switchMode .status{
+        background-color: var(--SUCCESS-500);
+        color: var(--WHITE);
+        padding: 0.125rem 0.5rem;
+    }
+
+    body.switchMode .inProgress {
+        background-color: var(--BLUE-500);
+    }
+
+    body.switchMode .accordion_header {
+        background-color: var(--PRIMARY-DARK);
+    }
+
+    body.switchMode .accordion_header1 p {
+        color: var(--NEW-SELECT);
+    }
+
+    body.switchMode .dataIcon {
+        filter: invert(100%) brightness(150%);
+    }
+    
+    body.switchMode .accordion_item .column2 {
+        border-bottom-color: var(--PRIMARY-DARK);
+        background-color: #514E5D;
+    }
+
+    body.switchMode .column2_dropdown {
+        background-color: var(--BLACK2);
+        color: var(--NEW-SELECT);
+        border-bottom-color: var(--PRIMARY-SELECT);
+    }
+
+    body.switchMode .viewButton img {
+        filter: invert(100%) brightness(150%);
+    }
+
+    body.switchMode footer {
+        background-color: var(--BLACK2) ;
+        border-top: 1px solid var(--PRIMARY-SELECT);
+        box-shadow: none;
+    }
+
+    body.switchMode footer p {
+        color: var(--NEW-SELECT);
+    }
+
+    body.switchMode .footer_home p {
+        color: var(--PRIMARY-COLOR);
+    }
+
+    body.switchMode .footer_bar img {
+        filter: invert(40%) brightness(150%);
+    }
+    body.switchMode .footer_home img {
+        filter: invert(40%) sepia(50%) saturate(500%) hue-rotate(220deg);
+    }
+
+}
+
+
